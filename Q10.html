@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Dropdown on Hover</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+    $('#dropdown').hover(function() {
+        $(this).attr('size', $('option').length);
+    },
+    function() {
+        $(this).attr('size', 4);
+    });
+});
+</script>
+</head>
+<body>
+<h2>Dropdown on Hover</h2>
+<strong>Select Your Favorite Game Below</strong>
+<select id="dropdown">
+    <option>Select Your Option</option>
+    <option>Cricket</option>
+    <option>Footbal</option>
+    <option>Hockey</option>
+    <option>Badminton</option>
+</select>
+</body>
+</html>              

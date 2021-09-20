@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <p class="tothenew">The fist paragraph</p>
+        <p class="the">The second paragraph</p>
+        <p class="Thenew">The third paragraph</p>
+        <script>
+            $(document).ready(function(){
+                $("p[class$='new']").css('color','red');
+            })
+        </script>
+    </body>
+</html>

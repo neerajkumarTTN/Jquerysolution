@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>image array</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var imgs=[
+            'download 1.jpeg',
+            'download.jpeg',
+            'download2.jpeg',
+            'download4.jpeg'
+        ];
+        var len =imgs.length;
+        $(function(){
+            setInterval(slider,500);
+        });
+        function slider(){
+            $('#slider').fadeOut("slow",function(){
+                $(this).attr('src',imgs[(imgs.length++)%len]).fadeIn("slow");
+            });
+        }
+    })
+</script>
+</head>
+<body>
+    <div class="image">
+        <img id="slider">
+    </div>
+
+
+</body>
+</html>              

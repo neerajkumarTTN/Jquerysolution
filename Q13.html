@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .panel {
+        color: rgb(8, 10, 4);
+    }
+</style>
+
+<body>
+    <div class="panel">
+        hello neeraj how are you?
+        Wikipedia is a free content, multilingual online encyclopedia written and maintained by a community of
+        volunteers through a
+        model of open collaboration, using a wiki-based editing system.
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var maxheight = 0;
+            var hi = null;
+            $('.panel').each(function () {
+                var height = $(this).height();
+                if (height > maxheight) {
+                    maxheight = height;
+                    hi = $(this);
+                }
+            })
+            console.log('Max height of div element:', maxheight);
+            $(hi).css('background-color', 'green');
+        })
+    </script>
+</body>
+
+</html>

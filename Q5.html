@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .panel {
+        color: rgb(8, 10, 4);
+    }
+</style>
+
+<body>
+    <p>List 1:</p>
+    <ul id="main">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li class="target">Grapes</li>
+    </ul>
+    <button>Click</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('button').click(function () {
+            $("#main").children(".target").css('font-size','200%');
+
+        });
+
+    </script>
+</body>
+
+</html>

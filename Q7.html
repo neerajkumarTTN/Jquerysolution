@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: arial
+        }
+
+        #box {
+            padding: 10px;
+            border: 2px solid #000;
+        }
+
+        .load {
+            background: tan;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        });
+    </script>
+</head>
+
+<body>
+    <div id="test">
+        <h>Hi i am neeraj </h>
+    </div>
+    <button>Click</button>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('#test').append('you clicked')
+            });
+            
+        })
+    </script>
+
+</body>
+
+</html>
